@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Metric'; /*a name to be used later*/
+    src: url('Metric-Font/MetricApp-Regular.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'MetricBold'; /*a name to be used later*/
+    src: url('Metric-Font/MetricApp-Bold.ttf'); /*URL to font*/
+}
+
+body { 
+	font-family: "Metric";
+	font-size: 30px;
+	text-align: center;
+	background-color: #C6C9CA;
+ }
+
+b {
+	font-family: "MetricBold";
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="angular.min.js"></script>
+  </head>
+
+    <body>
+
+    <div>
+      <!-- Replace the variable 'src' with "logos/hpe_helion_blk_pos_rgb.png" or "logos/hpe_helion_grn_pos_rgb.png" to change the displayed logo-->
+      <img src="logos/hpe_helion_grn_pos_rgb.png" alt="Hewlett-Packard Enterprise Helio Logo" style="width:377px;height:104px;">
+    </div>
+
+      <div ng-app="envVarApp" ng-controller="ServiceController"> 
+          <p> This is instance number: <b>{{ envVariables.CF_INSTANCE_INDEX }}</b><br/>of the App <b>{{ envVariables.STACKATO_APP_NAME }}</b>. <br/>It is listening on port: <b>{{ envVariables.PORT }}</b>
+          </p>
+      </div>
+
+      <!-- Împort the app.js with the appropriate controller -->
+      <script src="app.js"></script>
+
+  </body>
+</html>

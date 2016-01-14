@@ -1,0 +1,2 @@
+A simple App for Stackato which prints the chosen name, the instance number and the port of an for the App in a simple yet clear view.
+The HPE Helion Logo displayed on the top can be changed in index.html-
