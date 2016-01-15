@@ -8,6 +8,11 @@
     src: url('Metric-Font/MetricApp-Bold.ttf'); /*URL to font*/
 }
 
+@font-face {
+	font-family: 'MetricLight'; 
+	src: url('Metric-Font/MetricApp-Light.ttf');
+}
+
 body { 
 	font-family: "Metric";
 	font-size: 30px;
@@ -17,4 +22,9 @@ body {
 
 b {
 	font-family: "MetricBold";
+}
+
+#subtitle { 
+	font-family: 'MetricLight';
+    font-size: 20px;
 }
