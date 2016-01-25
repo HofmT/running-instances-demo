@@ -28,3 +28,51 @@ b {
 	font-family: 'MetricLight';
     font-size: 20px;
 }
+
+
+/*
+*************************************
+          Copyright 2014
+             benague
+*************************************
+*/
+/* button CSS */
+#buttons {
+  text-align: left;
+}
+
+/* start da css for da buttons */
+.btn {
+
+	border: none;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+
+.green {
+  background-color: #01a982;
+  transition: opacity .25s ease;
+}
+
+.green:hover {
+  opacity: .66;
+}
+
+.numberInput {
+	padding: 15px 20px;
+	font-size: 22px;
+	border: none;
+}

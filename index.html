@@ -3,13 +3,16 @@
   <head>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="angular.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script> var socket = io(); </script>
   </head>
 
     <body>
 
     <div>
       <!-- Replace the variable 'src' with "logos/hpe_helion_blk_pos_rgb.png" or "logos/hpe_helion_grn_pos_rgb.png" to change the displayed logo-->
-      <img src="logos/hpe_helion_grn_pos_rgb.png" alt="Hewlett-Packard Enterprise Helio Logo" style="width:377px;height:104px;">
+      <img src="logos/hpe_helion_grn_pos_rgb.png" alt="Hewlett-Packard Enterprise Helion Logo" style="width:377px;height:104px;">
     </div>
 
     <!-- Feel free to edit the text below! -->
@@ -22,8 +25,21 @@
           </p>
       </div>
 
+     <br>
+     
+     <div>
+        <button class="btn green" id="buttons">
+          Produce Load
+        </button>
+     </div>
+
       <!-- Împort the app.js with the appropriate controller -->
       <script src="app.js"></script>
 
+      <script >
+          $("#buttons").click(function() {
+              socket.emit('produceLoad');
+          }); 
+      </script>
   </body>
 </html>
