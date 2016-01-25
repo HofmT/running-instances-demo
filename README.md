@@ -4,3 +4,4 @@ This demo is appropriate for the following scenarios:
 + Show that multiple instances of an App are running by displaying the different ports and instance numbers.
 + Show that an application is still accessible while deploying a new version.
 + Show how changes affect the application, e.g. by changing the displayed HPE Helion Logo.
++ Show how additional instances are launched when having a high CPU Load.
