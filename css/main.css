@@ -43,8 +43,7 @@ b {
 
 /* start da css for da buttons */
 .btn {
-
-	border: none;
+  border: none;
   padding: 15px 25px;
   font-size: 22px;
   text-decoration: none;
@@ -64,11 +63,10 @@ b {
 
 .green {
   background-color: #01a982;
-  transition: opacity .25s ease;
 }
 
 .green:hover {
-  opacity: .66;
+  background-color: #016c53;
 }
 
 .numberInput {
