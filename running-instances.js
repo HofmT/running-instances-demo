@@ -1,11 +1,13 @@
 //Modules Importation
 var express = require('express');
-var app = express();
 var http = require('http');
-var server = http.createServer(app);
-var io = require('socket.io').listen(server);
+var sockio = require('socket.io');
 
 var fibonacci = require('./fibonacci.js');
+
+var app = express();
+var server = http.createServer(app);
+var io = sockio(server);
 
 //process.env.PORT is needed for the Cloud environment - 8878 is for localhost
 var port=process.env.PORT || 8878;
